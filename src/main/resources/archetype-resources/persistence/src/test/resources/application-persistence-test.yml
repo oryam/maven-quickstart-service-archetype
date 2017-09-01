@@ -1,0 +1,14 @@
+# =======================================
+# Configuration for persistence test
+#
+# - dedicated application-${profileName}.yml because application.yml is excluded from *-tests.jar file
+# - use it when needed with profile name in spring.profiles.active.
+# =======================================
+
+# LOG
+logging.level.com.oryam.maven: TRACE
+logging.level.org.hibernate.sql: DEBUG
+#logging.level.org.hibernate.type: TRACE
+#spring.jpa.properties.hibernate.format_sql: true
+
+spring.jpa.properties.hibernate.hbm2ddl.import_files: import-test.sql

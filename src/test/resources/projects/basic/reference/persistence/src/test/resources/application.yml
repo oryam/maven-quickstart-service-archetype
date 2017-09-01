@@ -1,0 +1,5 @@
+# =======================================
+# Configuration for persistence test
+# =======================================
+
+spring.profiles.active: persistence-test

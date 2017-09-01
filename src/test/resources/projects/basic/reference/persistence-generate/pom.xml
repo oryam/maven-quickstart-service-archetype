@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.oryam.maven.myapp</groupId>
+        <artifactId>myapp-services</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>myapp-persistence-generate</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <hibernate-tools.version>4.3.5.Final</hibernate-tools.version>
+        <com.oracle.version>12.2.0.1.0</com.oracle.version>
+        <hbm.generated.source>${project.build.directory}/generated-sources/hbm</hbm.generated.source>
+        <db.host>localhost</db.host>
+        <db.user>user</db.user>
+        <db.password>pass</db.password>
+        <db.schema>mydb</db.schema>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-tools</artifactId>
+            <version>${hibernate-tools.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${hbm.generated.source}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>hibernate3-maven-plugin</artifactId>
+                <version>3.0</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>hbm2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <components>
+                        <component>
+                            <name>hbm2java</name>
+                            <implementation>jdbcconfiguration</implementation>
+                        </component>
+                    </components>
+                    <hibernatetool>
+                        <jdbcconfiguration 
+                        	packagename="com.oryam.maven.myapp.persistence.jpa.model"
+                            configurationfile="src/main/resources/hibernate.cfg.xml" 
+                            revengfile="src/main/resources/hibernate.reveng.xml"
+                            detectmanytomany="true" />
+                        <hbm2java destdir="${hbm.generated.source}" jdk5="true" ejb3="true" />
+                    </hibernatetool>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-core</artifactId>
+                        <version>4.3.11.Final</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-entitymanager</artifactId>
+                        <version>4.3.11.Final</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.hibernate.common</groupId>
+                        <artifactId>hibernate-commons-annotations</artifactId>
+                        <version>4.0.5.Final</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.hibernate.javax.persistence</groupId>
+                        <artifactId>hibernate-jpa-2.1-api</artifactId>
+                        <version>1.0.0.Final</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>javax.transaction</groupId>
+                        <artifactId>jta</artifactId>
+                        <version>1.1</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.freemarker</groupId>
+                        <artifactId>freemarker</artifactId>
+                        <version>2.3.23</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                        <version>1.2</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>commons-collections</groupId>
+                        <artifactId>commons-collections</artifactId>
+                        <version>3.2.2</version>
+                    </dependency>
+
+                    <dependency>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-tools</artifactId>
+                        <version>${hibernate-tools.version}</version>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>*</groupId>
+                                <artifactId>*</artifactId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
+
+                    <dependency>
+                        <groupId>com.oracle</groupId>
+                        <artifactId>ojdbc8</artifactId>
+                        <version>${com.oracle.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

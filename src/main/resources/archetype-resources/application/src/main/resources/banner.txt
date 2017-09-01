@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+ __  ____   __     _    ____  ____  _     ___ ____    _  _____ ___ ___  _   _ 
+|  ${symbol_escape}/  ${symbol_escape} ${symbol_escape} / /    / ${symbol_escape}  |  _ ${symbol_escape}|  _ ${symbol_escape}| |   |_ _/ ___|  / ${symbol_escape}|_   _|_ _/ _ ${symbol_escape}| ${symbol_escape} | |
+| |${symbol_escape}/| |${symbol_escape} V /    / _ ${symbol_escape} | |_) | |_) | |    | | |     / _ ${symbol_escape} | |  | | | | |  ${symbol_escape}| |
+| |  | | | |    / ___ ${symbol_escape}|  __/|  __/| |___ | | |___ / ___ ${symbol_escape}| |  | | |_| | |${symbol_escape}  |
+|_|  |_| |_|   /_/   ${symbol_escape}_|_|   |_|   |_____|___${symbol_escape}____/_/   ${symbol_escape}_|_| |___${symbol_escape}___/|_| ${symbol_escape}_|
+                                                                               
+Version: ${symbol_dollar}{application.version}
+Spring Boot: ${symbol_dollar}{spring-boot.version}

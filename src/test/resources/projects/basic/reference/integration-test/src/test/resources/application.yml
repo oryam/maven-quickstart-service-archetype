@@ -1,0 +1,5 @@
+# =======================================
+# Configuration for integration test
+# =======================================
+
+spring.profiles.active: persistence-test,integration-test

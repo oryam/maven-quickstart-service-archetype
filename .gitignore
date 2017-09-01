@@ -1,0 +1,9 @@
+# IDE
+/.project
+/.classpath
+/.settings
+/.idea
+/.vscode
+
+# build
+/target

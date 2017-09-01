@@ -1,0 +1,77 @@
+# =======================================
+# Configuration for bootable application
+# =======================================
+
+# LOG
+#debug: true
+logging.level.root: INFO
+logging.level.org.springframework.web: DEBUG
+logging.level.com.oryam.maven: DEBUG
+
+# SQL LOG
+logging.level.org.hibernate.SQL: DEBUG
+#logging.level.org.hibernate.type: TRACE
+#spring.jpa.properties.hibernate.format_sql: true
+
+logging.file: ./logs/@project.artifactId@.log
+
+spring.main.banner-mode: log
+
+
+# SERVER
+server.port: 9999
+management.port: 9201
+management.address: 127.0.0.1
+management.security.enabled: false
+
+
+# JSON
+spring.jackson.serialization.indent_output: true
+
+
+# CORS
+cors.security.origins: http://localhost:9200,http://localhost:4200
+
+
+# STATIC PAGES
+app.static.location: file:../front/
+spring.resources.static-locations: ${app.static.location},classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+
+# activates these profiles
+spring.profiles.include:
+  - module-common
+  - module-domain
+  - module-persistence
+  - module-web
+
+
+---
+spring:
+  profiles: oracle
+
+  datasource:
+    initialize: false
+    platform: oracle
+  jpa.database-platform: org.hibernate.dialect.Oracle10gDialect
+  jpa.hibernate.ddl-auto: none
+
+
+---
+spring:
+  profiles: env-dev
+
+oracle:
+  url: jdbc:oracle:thin:@//${dbhost}
+  username: ${dbuser}
+  password: ${dbpass}
+
+
+---
+spring:
+  profiles: env-rec
+
+oracle:
+  url: jdbc:oracle:thin:@//${dbhost}
+  username: ${dbuser}
+  password: ${dbpass}

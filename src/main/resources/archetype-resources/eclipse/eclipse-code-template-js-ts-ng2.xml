@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="JSDoc" deleted="false" description="author name" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.author" name="@author">@author ${user}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;b&gt;&lt;/b&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.b_tag" name="&lt;b&gt;">&lt;b&gt;${word_selection}${}&lt;/b&gt;${cursor}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;code&gt;&lt;/code&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.code_tag" name="&lt;code&gt;">&lt;code&gt;${word_selection}${}&lt;/code&gt;${cursor}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;i&gt;&lt;/i&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.i_tag" name="&lt;i&gt;">&lt;i&gt;${word_selection}${}&lt;/i&gt;${cursor}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;pre&gt;&lt;/pre&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.pre_tag" name="&lt;pre&gt;">&lt;pre&gt;${word_selection}${}&lt;/pre&gt;${cursor}</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.every" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrayevery" name="arrayevery">${array}.every(${currentItem} =&gt;
+	${false}
+);</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.filter" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrayfilter" name="arrayfilter">${array}.filter(${currentItem} =&gt;
+	${false}
+);</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.find" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrayfind" name="arrayfind">${array}.find(${currentItem} =&gt; {
+	${line_selection}${cursor}
+});</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.findIndex" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrayfindindex" name="arrayfindindex">${array}.findIndex(${currentItem} =&gt; -1);</template><template autoinsert="false" context="TypeScript" deleted="false" description="!Templates.foreach!" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.foreach" name="arrayforeach">${array}.forEach(${currentItem} =&gt; {
+	
+});</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.map" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arraymap" name="arraymap">${array}.map(${currentItem} =&gt; {
+	
+});</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.reduce" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrayreduce" name="arrayreduce">${array}.reduce((${previousItem}, ${currentItem}) =&gt; {
+	${line_selection}${cursor}
+});</template><template autoinsert="false" context="TypeScript" deleted="false" description="array.some" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arraysome" name="arraysome">${array}.some(${currentItem} =&gt;
+	${false}
+);</template><template autoinsert="false" context="TypeScript" deleted="false" description="arrow function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrow" name="arrow">${param} =&gt; ${output}</template><template autoinsert="false" context="TypeScript" deleted="false" description="arrow function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.arrowfunction" name="arrowfunction">(${params}) =&gt; {
+	
+}</template><template autoinsert="false" context="React" deleted="false" description="Binds the this of a method. To be used inside a constructor" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.bnd" name="bnd">this.${prop} = this.${prop}.bind(this);</template><template autoinsert="false" context="TypeScript" deleted="false" description="catch block" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.catch" name="catch">catch (e) {
+	// ${todo}: handle exception${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked once, only on the client (not on the server), immediately after the initial rendering occurs." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cdm" name="cdm">componentDidMount() {
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked immediately after the component's updates are flushed to the DOM." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cdup" name="cdup">componentDidUpdate(prevProps, prevState) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="class declaration" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.class" name="class">class ${ClassName} {
+	constructor(${}) {
+		${line_selection}${cursor}
+	}
+}</template><template autoinsert="false" context="React" deleted="false" description="Adds a default constructor for the class that contains props as arguments" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.con" name="con">constructor(props) {
+	super(props);
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Adds a default constructor for the class that contains props and context as arguments" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.conc" name="conc">constructor(props, context) {
+	super(props, context);
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="constructor block" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.constructor" name="constructor">constructor(${}) {
+	${line_selection}${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked once, both on the client and server, immediately before the initial rendering occurs" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cwm" name="cwm">componentWillMount() {
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked when a component is receiving new props. This method is not called for the initial render." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cwr" name="cwr">componentWillReceiveProps(nextProps) {
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked immediately before a component is unmounted from the DOM." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cwun" name="cwun">componentWillUnmount() {
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Invoked immediately before rendering when new props or state are being received." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.cwup" name="cwup">componentWillUpdate(nextProps, nextState) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="do while statement" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.do" name="do">do {
+	${line_selection}${cursor}
+} while (${condition});</template><template autoinsert="false" context="TypeScript" deleted="false" description="else block" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.else" name="else">else {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="else if block" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.elseif" name="elseif">else if (${condition}) {
+	${cursor}
+}</template><template autoinsert="false" context="React" deleted="false" description="Creates empty state object. To be used in a constructor." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.est" name="est">this.state = {
+	${cursor}
+}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;code&gt;false&lt;/code&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.code_tag_false" name="false">&lt;code&gt;false&lt;/code&gt;</template><template autoinsert="false" context="TypeScript" deleted="false" description="iterate over array" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.for_array" name="for">for (var ${index} = 0; ${index} &lt; ${array}.length; ${index}++) {
+	${line_selection}${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="iterate over array with temporary variable" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.for_temp" name="for">for (var ${index} = 0; ${index} &lt; ${array}.length; ${index}++) {
+	var ${array_element} = ${array}[${index}];
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="iterate using for .. in" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.for_iterable" name="forin">for (var ${iterable_element} in ${iterable}) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="for over collection using for .. of" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.forof" name="forof">for (let ${iterable_element} of ${iterable}) {
+	${line_selection}${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.public_method" name="function">function ${name}(${}) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="anonymous function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.anonymous_public_method" name="function">function (${}) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="generator" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.generator" name="generator">function* ${name}(${}) {
+	// ${todo}${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="getter function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.getter" name="getter">get ${field}() {
+	return ${field};
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="if statement" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.if" name="if">if (${condition}) {
+	${line_selection}${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="if else statement" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.ifelse" name="ifelse">if (${condition}) {
+	${cursor}
+} else {
+	
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="import module" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.import" name="import">import ${portion} from ${module};</template><template autoinsert="false" context="TypeScript" deleted="false" description="import aliased module" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.importalias" name="importalias">import * as ${alias} from ${module};</template><template autoinsert="false" context="TypeScript" deleted="false" description="lazy creation" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.lazy" name="lazy">if (${name:var} == null) {
+	${name} = new ${type}(${arguments});
+	${cursor}
+}
+
+return ${name};</template><template autoinsert="false" context="TypeScript" deleted="false" description="create new object" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.new" name="new">var ${name} = new ${type}(${arguments});</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 bootstrap snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-bootstrap" name="ngBootstrap">import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { ${App}Module } from './${app}.module';
+
+platformBrowserDynamic().bootstrapModule(${App}Module)
+	.then(success =&gt; console.log(`Bootstrap success`))
+	.catch(error =&gt; console.log(error));${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 component snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-component" name="ngComponent">import { Component, OnInit } from '@angular/core';
+
+@Component({
+	moduleId: module.id,
+	selector: '${selector}',
+	templateUrl: '${name}.component.html'
+})
+export class ${ComponentName}Component implements OnInit {
+	constructor() { }
+
+	ngOnInit() { }${cursor}
+}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 App root component snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-component-root" name="ngComponent-root">import { Component } from '@angular/core';
+
+@Component({
+	moduleId: module.id,
+	selector: '${myapp}',
+	template: `
+		&lt;router-outlet&gt;&lt;/router-outlet&gt;
+	`
+})
+export class ${App}Component { }${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 Http.get snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-http-get" name="ngHttp-get">return this.http.get('${url}')
+	.map((response: Response) =&gt; response.json()${cursor});</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 observable subscribe snippet" enabled="true" name="ngImport">import { ${2} } from '${1}';${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 Module snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-module" name="ngModule">import { NgModule } from '@angular/core';
+
+import { ${Name}Component }   from './${name}.component';
+
+@NgModule({
+	imports: [],
+	exports: [],
+	declarations: [${Name}Component],
+	providers: []
+})
+export class ${Name}Module { }${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 Root Module snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-module-root" name="ngModule-root">import { NgModule } from '@angular/core';
+import { BrowserModule  } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+
+import { ${App}Component } from './${app}.component';
+import { AppRoutingModule } from './${app}.routing'; //TODO: Create ${app}.routing
+
+@NgModule({
+	imports: [
+		BrowserModule,
+		HttpModule,
+		
+		AppRoutingModule,
+	],
+	declarations: [${App}Component],
+	providers: [/* TODO: Providers go here */],
+	bootstrap: [${App}Component],
+})
+export class ${App}Module { }${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 pipe snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-pipe" name="ngPipe">import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+	name: '${name}'
+})
+
+export class ${PipeName}Pipe implements PipeTransform {
+	transform(value: any, args: any[]): any {
+		${cursor}
+	}
+}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 routing file snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-routing" name="ngRouting">import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ${Name}Component } from './${name}.component';
+
+const routes: Routes = [
+	{ path: '${path}', component: ${Name}Component }
+];
+
+@NgModule({
+	imports: [RouterModule.for${ChildOrRoot}(routes)],
+	exports: [RouterModule],
+})
+export class ${Name}RoutingModule { }
+
+export const routedComponents = [${Name}Component];</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 service snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-service" name="ngService">import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ${ServiceName}Service {
+	${cursor}constructor() { }
+}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 observable subscribe snippet" enabled="true" id="ts.eclipse.ide.angular2.ui.templates.ng2-subscribe" name="ngSubscribe">this.${service}.${function}()
+	.subscribe(${arg} =&gt; this.${property} = ${arg});${cursor}</template><template autoinsert="true" context="Angular2" deleted="false" description="Angular 2 unit test" enabled="true" name="ngTest">import { ${className} } from '${path}';&#13;
+&#13;
+describe('${className}', () =&gt; {&#13;
+&#13;
+    const instance = new ${className}();&#13;
+&#13;
+    it('should...', () =&gt; {&#13;
+        expect(instance).toEqual(0);&#13;
+    });&#13;
+&#13;
+});&#13;
+</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;code&gt;null&lt;/code&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.code_tag_null" name="null">&lt;code&gt;null&lt;/code&gt;</template><template autoinsert="false" context="TypeScript" deleted="false" description="new Promise" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.promise" name="promise">new Promise(function(${resolve}, ${reject}) { ${line_selection}${cursor} });</template><template autoinsert="false" context="React" deleted="false" description="Access component's props" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.props" name="props">this.props.${cursor}</template><template autoinsert="false" context="TypeScript" deleted="false" description="new Proxy" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.proxy" name="proxy">new Proxy(${target}, ${handler});</template><template autoinsert="false" context="React" deleted="false" description="Array prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pta" name="pta">PropTypes.array,</template><template autoinsert="false" context="React" deleted="false" description="An array of a certain type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptao" name="ptao">PropTypes.arrayOf(${cursor}),</template><template autoinsert="false" context="React" deleted="false" description="!Templates.react.ptaor!" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptaor" name="ptaor">PropTypes.arrayOf(${cursor}).isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Array prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptar" name="ptar">PropTypes.array.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Bool prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptb" name="ptb">PropTypes.bool,</template><template autoinsert="false" context="React" deleted="false" description="Bool prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptbr" name="ptbr">PropTypes.bool.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Prop type limited to specific values by treating it as an enum" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pte" name="pte">PropTypes.instanceOf(${cursor}),</template><template autoinsert="false" context="React" deleted="false" description="React element prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptel" name="ptel">PropTypes.element,</template><template autoinsert="false" context="React" deleted="false" description="React element prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptelr" name="ptelr">PropTypes.element.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Prop type limited to specific values by treating it as an enum required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pter" name="pter">PropTypes.instanceOf(${cursor}).isRequired,</template><template autoinsert="false" context="React" deleted="false" description="An object that could be one of many types" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptet" name="ptet">PropTypes.oneOfType([
+	${cursor}
+]),</template><template autoinsert="false" context="React" deleted="false" description="An object that could be one of many types required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptetr" name="ptetr">PropTypes.oneOfType([
+	${cursor}
+]).isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Func prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptf" name="ptf">PropTypes.func,</template><template autoinsert="false" context="React" deleted="false" description="Func prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptfr" name="ptfr">PropTypes.func.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Is an instance of a class prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pti" name="pti">PropTypes.element,</template><template autoinsert="false" context="React" deleted="false" description="Is an instance of a class prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptir" name="ptir">PropTypes.element.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Number prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptn" name="ptn">PropTypes.number,</template><template autoinsert="false" context="React" deleted="false" description="Anything that can be rendered: numbers, strings, elements or an array" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptnd" name="ptnd">PropTypes.node,</template><template autoinsert="false" context="React" deleted="false" description="Anything that can be rendered: numbers, strings, elements or an array required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptndr" name="ptndr">PropTypes.node.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Number prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptnr" name="ptnr">PropTypes.number.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Object prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pto" name="pto">PropTypes.object,</template><template autoinsert="false" context="React" deleted="false" description="An object with property values of a certain type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptoo" name="ptoo">PropTypes.objectOf(${cursor}),</template><template autoinsert="false" context="React" deleted="false" description="An object with property values of a certain type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptoor" name="ptoor">PropTypes.objectOf(${cursor}).isRequired,</template><template autoinsert="false" context="React" deleted="false" description="!Templates.react.ptor!" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptor" name="ptor">PropTypes.object.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="String prop type" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.pts" name="pts">PropTypes.string,</template><template autoinsert="false" context="React" deleted="false" description="An object taking on a particular shape" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptsh" name="ptsh">PropTypes.shape({
+	${cursor}
+}),</template><template autoinsert="false" context="React" deleted="false" description="An object taking on a particular shape required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptshr" name="ptshr">PropTypes.shape({
+	${cursor}
+}).isRequired,</template><template autoinsert="false" context="React" deleted="false" description="String prop type required" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ptsr" name="ptsr">PropTypes.string.isRequired,</template><template autoinsert="false" context="React" deleted="false" description="Creates a React component class with ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rcc" name="rcc">import React, {Component} from 'react';
+
+class ${componentName} extends Component {
+	render() {
+		return (
+			&lt;div&gt;
+				${cursor}
+			&lt;/div&gt;
+		);
+	}
+}
+
+export default ${componentName};</template><template autoinsert="false" context="React" deleted="false" description="Creates a React component class with PropTypes and ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rccp" name="rccp">import React, {Component, PropTypes} from 'react';
+
+class ${componentName} extends Component {
+	render() {
+		return (
+			&lt;div&gt;
+				${cursor}
+			&lt;/div&gt;
+		);
+	}
+}
+
+${componentName}.propTypes = {
+
+};
+
+export default ${componentName};</template><template autoinsert="false" context="React" deleted="false" description="Creates a React component class with PropTypes and all lifecycle methods and ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rcfc" name="rcfc">import React, {Component, PropTypes} from 'react';
+
+class ${componentName} extends Component {
+	constructor(props) {
+		super(props);
+	}
+	
+	componentWillMount() {
+	
+	}
+
+	componentDidMount() {
+	
+	}
+	
+	componentWillReceiveProps(nextProps) {
+	
+	}
+
+	shouldComponentUpdate(nextProps, nextState) {
+	
+	}
+
+	componentDidUpdate(prevProps, prevState) {
+	
+	}
+
+	componentWillUnmount() {
+	
+	}
+					
+	render() {
+		return (
+			&lt;div&gt;
+				${cursor}
+			&lt;/div&gt;
+		);
+	}
+}
+
+${componentName}.propTypes = {
+	${cursor}
+};
+
+export default ${componentName};</template><template autoinsert="false" context="React" deleted="false" description="Creates a React component class with ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rcjc" name="rcjc">class ${componentName} extends Component {
+	render() {
+		return (
+			&lt;div&gt;
+				${cursor}
+			&lt;/div&gt;
+		);
+	}
+}</template><template autoinsert="false" context="React" deleted="false" description="When called, it should examine this.props and this.state and return a single child element." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ren" name="ren">
+	render() {
+		return (
+			&lt;div&gt;
+				${cursor}
+			&lt;/div&gt;
+		);
+	}</template><template autoinsert="false" context="React" deleted="false" description="Creates empty propTypes declaration" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rpt" name="rpt">${prop1}.propTypes = {
+	${prop2}
+}</template><template autoinsert="false" context="React" deleted="false" description="Creates a stateless React component without PropTypes and ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rsc" name="rsc">import React from 'react';
+
+const ${componentName} = () =&gt; {
+	return (
+		&lt;div&gt;
+			${cursor}
+		&lt;/div&gt;
+	);
+};
+
+export default ${componentName};</template><template autoinsert="false" context="React" deleted="false" description="Creates a stateless React component with PropTypes and ES6 module system" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.rscp" name="rscp">import React, {PropTypes} from 'react';
+
+const ${componentName} = props =&gt; {
+	return (
+		&lt;div&gt;
+			${cursor}
+		&lt;/div&gt;
+	);
+}
+
+${componentName}.propTypes = {
+	${cursor}
+};
+
+export default ${componentName};</template><template autoinsert="false" context="React" deleted="false" description="Invoked before rendering when new props or state are being received." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.scu" name="scu">shouldComponentUpdate(nextProps, nextState) {
+	${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="setInterval()" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.setinterval" name="setinterval">setInterval(() =&gt; {
+	${line_selection}${cursor}
+}, ${milliseconds});</template><template autoinsert="false" context="TypeScript" deleted="false" description="setter function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.setter" name="setter">set ${propertyName}(${param}) {
+	${propertyName} = ${param};
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="setTimeout()" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.settimeout" name="settimeout">setTimeout(() =&gt; {
+	${line_selection}${cursor}
+}, ${milliseconds});</template><template autoinsert="false" context="TypeScript" deleted="false" description="..." enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.spread" name="spread">...${line_selection}${cursor}</template><template autoinsert="false" context="React" deleted="false" description="Performs a shallow merge of nextState into current state" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.ssf" name="ssf">this.setState((state, props) =&gt; { return { ${cursor} }});
+</template><template autoinsert="false" context="React" deleted="false" description="Performs a shallow merge of nextState into current state" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.sst" name="sst">this.setState(${cursor});</template><template autoinsert="false" context="React" deleted="false" description="Access component's state" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.react.state" name="state">this.state.${cursor}</template><template autoinsert="false" context="TypeScript" deleted="false" description="static function" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.staticfunction" name="staticfunction">static ${name}(${}) {
+	// ${todo}${cursor}
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="switch case statement" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.switch" name="switch">switch (${key}) {
+	case ${value}:
+		${cursor}
+		break;
+
+	default:
+		break;
+}</template><template autoinsert="true" context="JSDoc" deleted="false" description="&lt;code&gt;true&lt;/code&gt;" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.code_tag_true" name="true">&lt;code&gt;true&lt;/code&gt;</template><template autoinsert="false" context="TypeScript" deleted="false" description="try catch block" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.try" name="try">try {
+	${line_selection}${cursor}
+} catch (e) {
+	// ${todo}: handle exception
+}</template><template autoinsert="false" context="TypeScript" deleted="false" description="while loop with condition" enabled="true" id="ts.eclipse.ide.jsdt.ui.templates.while_condition" name="while">while (${condition}) {
+	${line_selection}${cursor}
+}</template></templates>
